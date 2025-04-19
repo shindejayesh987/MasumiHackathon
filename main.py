@@ -6,7 +6,7 @@ from fastapi import FastAPI, Query, HTTPException
 from pydantic import BaseModel, Field, field_validator
 from masumi.config import Config
 from masumi.payment import Payment, Amount
-from crew_definition import ResearchCrew
+from crew_definition import MarketplaceCrew
 from logging_config import setup_logging
 
 # Configure logging
@@ -70,8 +70,13 @@ class ProvideInputRequest(BaseModel):
 async def execute_crew_task(input_data: str) -> str:
     """ Execute a CrewAI task with Research and Writing Agents """
     logger.info(f"Starting CrewAI task with input: {input_data}")
-    crew = ResearchCrew(logger=logger)
-    result = crew.crew.kickoff(inputs={"text": input_data})
+    if isinstance(input_data, dict) and "text" in input_data:
+        input_text = input_data["text"]
+    else:
+        input_text = input_data  # fallback, already structured?
+
+    crew = MarketplaceCrew(input_text)  # Pass string to trigger parser agent
+    result = crew.run()
     logger.info("CrewAI task completed successfully")
     return result
 
@@ -174,8 +179,13 @@ async def handle_payment_status(job_id: str, payment_id: str) -> None:
 
         # Execute the AI task
         result = await execute_crew_task(jobs[job_id]["input_data"])
-        result_dict = result.json_dict
-        logger.info(f"Crew task completed for job {job_id}")
+
+        if hasattr(result, "json_dict"):
+            result_dict = result.json_dict
+        else:
+            logger.error(f"AI task failed or returned unexpected type: {result}")
+            result_dict = {"error": str(result)}
+
         
         # Mark payment as completed on Masumi
         # Use a shorter string for the result hash

@@ -50,7 +50,7 @@ class MarketplaceCrew:
             try:
                 self.input_data = json.loads(str(parsed).strip())
             except Exception as e:
-                self.result = f"❌ Failed to parse input: {e}\nRaw output:\n{parsed}"
+                self.result = f" Failed to parse input: {e}\nRaw output:\n{parsed}"
                 return
         
         # Step 2: Validate and cast values
@@ -60,7 +60,7 @@ class MarketplaceCrew:
             self.input_data["Quantity"] = int(self.input_data["Quantity"])
         except (ValueError, TypeError, KeyError) as e:
             self.result = (
-                f"❌ Invalid input format: {e} "
+                f" Invalid input format: {e} "
                 f"(Budget: {self.input_data.get('Budget')}, Quantity: {self.input_data.get('Quantity')})"
             )
 
@@ -75,20 +75,20 @@ class MarketplaceCrew:
             self.input_data["ProductDetails"] = product_details
 
         except KeyError:
-            self.result = "❌ 'ProductID' key missing in input data."
+            self.result = " 'ProductID' key missing in input data."
             return
 
         except ValueError as e:
-            self.result = f"❌ {e}"
+            self.result = f" {e}"
             return
 
         except Exception as e:
-            self.result = f"❌ Unexpected error while loading product details: {e}"
+            self.result = f" Unexpected error while loading product details: {e}"
             return
 
         if not product_details:
             self.result = (
-                f"🤖 Agent: Sorry, no matches found for ProductID '{self.input_data['ProductID']}'."
+                f" Agent: Sorry, no matches found for ProductID '{self.input_data['ProductID']}'."
             )
             return
 
@@ -199,4 +199,4 @@ class MarketplaceCrew:
             return self.result
         if self.crew:
             return self.crew.kickoff()
-        return "❌ Unexpected error: crew could not be initialized."
+        return " Unexpected error: crew could not be initialized."

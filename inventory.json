@@ -1,0 +1,42 @@
+[
+  {
+    "vendor_id": "v1",
+    "product_id": "p3",
+    "name": "Luxury Coffee Mug",
+    "current_quantity": 10,
+    "threshold": 20,
+    "desired_quantity": 30,
+    "budget": 600,
+    "instruction": "must have an elegant handle"
+  },
+  {
+    "vendor_id": "v2",
+    "product_id": "p4",
+    "name": "Luxury Tea Cup",
+    "current_quantity": 10,
+    "threshold": 5,
+    "desired_quantity": 300,
+    "budget": 600,
+    "instruction": "must have an handle"
+  },
+  {
+    "vendor_id": "v3",
+    "product_id": "p5",
+    "name": "Luxury Tea Cup",
+    "current_quantity": 10,
+    "threshold": 5,
+    "desired_quantity": 30,
+    "budget": 600,
+    "instruction": "must have an handle"
+  },
+  {
+    "vendor_id": "v5",
+    "product_id": "p4",
+    "name": "Luxury Tea Cup",
+    "current_quantity": 10,
+    "threshold": 5,
+    "desired_quantity": 30,
+    "budget": 600,
+    "instruction": "must have an handle"
+  }
+]

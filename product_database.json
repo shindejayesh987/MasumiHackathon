@@ -1,0 +1,36 @@
+[
+  { "product_id": "p1", "seller_id": "s1", "name": "Eco Water Bottle", "description": "Reusable bottle made from eco-friendly materials.", "price": 9.99, "quantity": 150 },
+  { "product_id": "p1", "seller_id": "s2", "name": "Eco Water Bottle", "description": "Affordable and lightweight eco bottle for daily use.", "price": 7.49, "quantity": 300 },
+  { "product_id": "p1", "seller_id": "s3", "name": "Eco Water Bottle", "description": "Luxury eco bottle with premium stainless steel.", "price": 19.99, "quantity": 75 },
+  { "product_id": "p1", "seller_id": "s4", "name": "Eco Water Bottle", "description": "Durable and BPA-free water bottle with minimalist design.", "price": 11.25, "quantity": 120 },
+  { "product_id": "p1", "seller_id": "s5", "name": "Eco Water Bottle", "description": "Wide-mouth eco bottle for easy cleaning.", "price": 10.50, "quantity": 180 },
+  { "product_id": "p1", "seller_id": "s6", "name": "Eco Water Bottle", "description": "Eco bottle with thermal insulation and sleek finish.", "price": 14.99, "quantity": 90 },
+
+  { "product_id": "p2", "seller_id": "s7", "name": "Smart Thermos", "description": "Thermos with temperature display and Bluetooth support.", "price": 29.99, "quantity": 65 },
+  { "product_id": "p2", "seller_id": "s8", "name": "Smart Thermos", "description": "Keeps drinks hot or cold with smart temperature sensing.", "price": 24.50, "quantity": 100 },
+  { "product_id": "p2", "seller_id": "s9", "name": "Smart Thermos", "description": "Rechargeable thermos with LCD screen and USB port.", "price": 32.00, "quantity": 40 },
+  { "product_id": "p2", "seller_id": "s10", "name": "Smart Thermos", "description": "App-enabled smart thermos with hydration reminder.", "price": 26.99, "quantity": 55 },
+  { "product_id": "p2", "seller_id": "s11", "name": "Smart Thermos", "description": "Sleek thermos with voice assistant integration.", "price": 34.75, "quantity": 35 },
+  { "product_id": "p2", "seller_id": "s12", "name": "Smart Thermos", "description": "Premium smart thermos with leak-proof design.", "price": 28.40, "quantity": 70 },
+
+  { "product_id": "p3", "seller_id": "s13", "name": "Luxury Coffee Mug", "description": "Handcrafted ceramic mug with gold rim.", "price": 18.00, "quantity": 40 },
+  { "product_id": "p3", "seller_id": "s14", "name": "Luxury Coffee Mug", "description": "Insulated double-walled mug for coffee enthusiasts.", "price": 21.50, "quantity": 60 },
+  { "product_id": "p3", "seller_id": "s15", "name": "Luxury Coffee Mug", "description": "Designer coffee mug with elegant handle.", "price": 16.99, "quantity": 80 },
+  { "product_id": "p3", "seller_id": "s16", "name": "Luxury Coffee Mug", "description": "Glossy finish ceramic mug with matching saucer.", "price": 22.75, "quantity": 45 },
+  { "product_id": "p3", "seller_id": "s17", "name": "Luxury Coffee Mug", "description": "Limited edition mug with intricate design.", "price": 25.00, "quantity": 30 },
+  { "product_id": "p3", "seller_id": "s18", "name": "Luxury Coffee Mug", "description": "Gift-packaged luxury mug set for coffee lovers.", "price": 19.25, "quantity": 50 },
+
+  { "product_id": "p4", "seller_id": "s19", "name": "Basic Plastic Bottle", "description": "Affordable plastic bottle suitable for daily hydration.", "price": 3.25, "quantity": 500 },
+  { "product_id": "p4", "seller_id": "s20", "name": "Basic Plastic Bottle", "description": "BPA-free plastic bottle with easy-grip design.", "price": 4.10, "quantity": 450 },
+  { "product_id": "p4", "seller_id": "s21", "name": "Basic Plastic Bottle", "description": "Transparent bottle with color cap and measuring scale.", "price": 4.75, "quantity": 300 },
+  { "product_id": "p4", "seller_id": "s22", "name": "Basic Plastic Bottle", "description": "Leak-proof plastic bottle with simple flip-top lid.", "price": 5.00, "quantity": 280 },
+  { "product_id": "p4", "seller_id": "s23", "name": "Basic Plastic Bottle", "description": "Durable everyday bottle with lightweight design.", "price": 3.75, "quantity": 400 },
+  { "product_id": "p4", "seller_id": "s24", "name": "Basic Plastic Bottle", "description": "Classic reusable plastic bottle for schools and gyms.", "price": 4.50, "quantity": 350 },
+
+  { "product_id": "p5", "seller_id": "s25", "name": "Steel Sports Bottle", "description": "Stainless steel bottle for active lifestyles.", "price": 12.99, "quantity": 150 },
+  { "product_id": "p5", "seller_id": "s26", "name": "Steel Sports Bottle", "description": "Rugged steel bottle with carabiner clip.", "price": 14.25, "quantity": 100 },
+  { "product_id": "p5", "seller_id": "s27", "name": "Steel Sports Bottle", "description": "Thermal-insulated steel bottle for hot/cold drinks.", "price": 16.50, "quantity": 95 },
+  { "product_id": "p5", "seller_id": "s28", "name": "Steel Sports Bottle", "description": "Eco-friendly sports bottle with anti-slip coating.", "price": 13.60, "quantity": 110 },
+  { "product_id": "p5", "seller_id": "s29", "name": "Steel Sports Bottle", "description": "Sleek matte-finish steel bottle with secure cap.", "price": 15.00, "quantity": 85 },
+  { "product_id": "p5", "seller_id": "s30", "name": "Steel Sports Bottle", "description": "Wide-mouth steel bottle with built-in filter.", "price": 17.75, "quantity": 70 }
+]

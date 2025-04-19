@@ -1,0 +1,2 @@
+example prompt 1: I need product P1002 for a fleet of 10 vehicles, with a total budget of $270. I’d prefer smart TPMS that can alert drivers about low pressure or remind them to refill tires.
+example prompt 2: Do you have product P1003 in stock? I want 40 units under $20 each, preferably with a deep shine and water-resistant ceramic finish.
